@@ -10,6 +10,22 @@
     <title>Iniciar sesión</title>
 </head>
 <body>
+    <header class="header padding-responsive">
+        <nav class="max-width">
+            <a class="header__link" href="#">
+                <img class="header__link--logo" src="./assets/logo.png" alt="Community Fest And Code" title="Community Fest And Code">
+            </a>
+            <button class="btn-toggle" onclick="showMenu()">
+                <i class="im im-menu"></i>
+            </button>
+            <div class="header__items padding-responsive" id="header__items">
+                <a class="header__items--link" href="">Principal</a>
+                <a class="header__items--link" href="">Nosotros</a>
+                <a class="header__items--link" href="">Servicios</a>
+                <a class="header__items--link" href="">Contáctanos</a>
+            </div>
+        </nav>
+    </header>
     <main class="container">
         <aside class="container__background"></aside>
         <form class="container__form" id="formLogin" name="formLogin">
@@ -60,6 +76,29 @@
             </div>
         </form>
     </main>
+    <footer class="footer padding-responsive">
+        <div class="max-width">
+            <nav class="footer__items">
+                <a class="footer__link" href="https://www.facebook.com/lugodiaz.kevin" target="_blank">
+                    <i class="im im-facebook"></i>
+                    Facebook
+                </a>
+                <a class="footer__link" href="https://www.instagram.com/kevinlugodev" target="_blank">
+                    <i class="im im-instagram"></i>
+                    Instagram
+                </a>
+                <a class="footer__link" href="https://github.com/lugodiaz" target="_blank">
+                    <i class="im im-github"></i>
+                    GitHub
+                </a>
+            </nav>
+            <div class="footer__items">
+                <small class="footer__dev">
+                    Desarrollador, 2021
+                </small>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="./js/login.js"></script>
     <!--
         Desarrollador: Kevin Harrinson Lugo Díaz

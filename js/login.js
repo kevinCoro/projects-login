@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },0);
 });
 
+// MOSTRAR MENU
+function showMenu(){
+    var menu = document.getElementById("header__items");
+    if(menu.style.display == "none"){
+        menu.style.display = "block";
+    }else{
+        menu.style.display = "none";
+    }
+}
 // VALIDAR INPUT USERNAME
 function usernameValid(){
     var response = document.getElementById("response");
