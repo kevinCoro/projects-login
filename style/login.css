@@ -1,0 +1,201 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    
+}
+a,
+.container__form--box-title{
+    color: #1976D2;
+}
+
+/* CONTENEDOR */
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.container__form--box-title{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* BACKGROUND */
+.container__background{
+    display: none;
+
+}
+
+/* FORMULARIO */
+.container__form{
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 300px;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transform: translateX(0px)scale(0);
+    -webkit-transform: translateX(0px)scale(0);
+    -moz-transform: translateX(0px)scale(0);
+    -ms-transform: translateX(0px)scale(0);
+    -o-transform: translateX(0px)scale(0);
+    opacity: 0;
+}
+
+/* INPUTS (TODOS) */
+.input{
+    width: 100%;
+    padding: .8rem 1rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* INPUTS (USERNAME-PASSWORD) */
+.input-text,
+.input-pass{
+    background-color: rgba(0,0,0,.05);
+}
+
+/* ERRORES */
+.hasErrors{
+    display: none;
+    margin-top: .25rem;
+    margin-left: .5rem;
+}
+
+/* ERROR ESPECIFICO */
+.error{
+    display: flex;
+    align-items: center;
+    color: #b71c1c;
+}
+
+/* ICONO ERROR */
+.im{
+    font-size: 16px;
+    margin-right: .5rem;
+}
+
+/* BOTÓN SUBMIT */
+.input-submit{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #1976D2;
+    color: #fff;
+}
+.input-submit[disabled]{
+    background-color: rgba(0,0,0,.05);
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* RESPUESTA LUEGO DE DAR CLICK AL BOTÓN SUBMIT */
+.response_after_submit{
+    display: none;
+    color: rgba(0,0,0,.6);
+    margin-right: .5rem;
+}
+
+/* OLVIDASTE TU CUENTA ? */
+.forward-password{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* (SPAN Y LINK) */
+.container__form--box-span,
+.container__form--box-forwardAccount{
+    font-size: 13px;
+}
+
+/* ¿Olvidaste tu cuenta? (span) */
+.container__form--box-span{
+    color: rgba(0,0,0,.7);
+}
+
+.container__form--box-forwardAccount:hover{
+    text-decoration: underline;
+}
+
+/* LINEA DIVISORA */
+.divider{
+    width: 95%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.divider__line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,.2);
+}
+.divider__span{
+    margin: 0 .5rem;
+    color: rgba(0,0,0,.7);
+}
+
+/* BOTÓN REGISTRARSE */
+.container__form--box-register{
+    width: fit-content;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 13px;
+    padding: .7rem  1rem;
+    margin: auto;
+}
+
+@media (min-width: 600px){
+    .container__form{
+        max-width: 350px;
+        padding: 2rem;
+        box-shadow: 0px 0px 20px rgba(0,0,0,.05);
+        border: 1px solid rgba(0,0,0,.05);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+}
+
+@media (min-width: 900px){
+    .container{
+        grid-template-columns: 1.2fr 1fr;
+    }
+    .container__background{
+        display: block;
+        background-image: url('../assets/background.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(80%);
+        -webkit-filter: brightness(80%);
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        grid-template-columns: 1.75fr 1fr;
+    }
+    .container__form{
+        max-width: 350px;
+    }
+}

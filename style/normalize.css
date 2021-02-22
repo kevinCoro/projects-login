@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+textarea,
+select,
+button,
+input[type='button'],
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='submit'],
+input[type='number']{
+    display: block;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}  
+textarea,
+select,
+input[type='text'],
+input[type='number']{
+    width: 100%;
+} 
+button,
+input[type='button'],
+input[type='submit']{
+    width: fit-content;
+}   
+a{
+    display: block;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+[hidden]{
+    display: none !important
+}
+ul,li{
+    list-style: none;
+}
+    
